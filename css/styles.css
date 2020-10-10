@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Base selectors */
+
+.sub-header{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 10px solid rgb(110, 228, 110);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    background-color: rgb(110, 228, 110);
+    padding: 1.3em 0;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+
+.sub-header p {
+    font-size: 20px;
+}
+
+h2,
+legend {
+    color: rgb(110, 228, 110);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+body,
+form,
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+fieldset {
+    border: none;
+    padding-top: 20px;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+button {
+    height: 3em;
+    background-color: #53bab2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Class selectors */
+
+.contact-info input,
+.contact-info select,
+textarea {
+    font-size: 20px;
+    width: 100%;
+    margin: 5px auto 15px;
+    height: 48px;
+    background-color: rgb(238, 232, 232);
+    border: none;
+    border-radius: 5px;
+    transition: transform 500ms ease-out 0ms;
+}
+
+textarea{
+    height: 6em;
+}
+
+.news-letter label {
+    margin: 15px 0;
+}
+
+.contact-info select {
+    font-size: 24px;
+}
+
+/* Attribute selectors */
+
+label[for*="news"],
+label[for*="format"] {
+    margin-left: 5px;
+}
+
+
+/* Pseudo elements */
+
+::placeholder {
+    text-align: right;
+    font-size: .6em;
+    font-style: italic;
+}
+
+input:checked + label {
+    font-weight: 600;
+}
+
+button:active {
+    background-color: pink;
+}
+
+textarea:focus,
+input:focus {
+    border: 5px solid rgb(110, 228, 110);
+}
+
+/* Media Query */
+
+@media (min-width:768px) {
+    .divider{
+        width: 60%;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+    }
+    
+    .container label {
+        min-width: 150px;
+        margin: auto;
+    }
+
+    .container input {
+        margin: 10px 0;
+    }
+
+    textarea:focus,
+    input:focus {
+        transform: scale(1.2);
+    }
+}
