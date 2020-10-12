@@ -99,6 +99,15 @@ label[for*="format"] {
     
 }
 
+.zip {
+    display: flex;
+    flex-direction: column;
+}
+
+.zip input {
+    max-width: 150px;
+    margin-left: 0;
+}
 
 /* Pseudo elements */
 
@@ -145,5 +154,14 @@ input:focus {
     textarea:focus,
     input:focus {
         transform: scale(1.2);
+    }
+
+    .zip {
+        flex-direction: row;
+    }
+
+    .zip label {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
